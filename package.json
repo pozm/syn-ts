@@ -1,0 +1,28 @@
+{
+  "name": "@rbxts/syn-ts",
+  "version": "1.0.0",
+  "main": "out/init.lua",
+  "license": "MIT",
+  "scripts": {
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w",
+    "prepublishOnly": "yarn run build"
+  },
+  "types": "out/index.d.ts",
+  "files": [
+    "out",
+    "!**/*.tsbuildinfo"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@rbxts/compiler-types": "^1.3.2-types.0",
+    "@rbxts/types": "^1.0.571",
+    "prettier": "^2.5.1",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "@rbxts/services": "^1.2.0"
+  }
+}
